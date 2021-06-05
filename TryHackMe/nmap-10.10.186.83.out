@@ -1,0 +1,86 @@
+# Nmap 7.91 scan initiated Fri May 21 00:16:59 2021 as: nmap -A -oN nmap-10.10.186.83.out -vv -p- 10.10.186.83
+Nmap scan report for 10.10.186.83
+Host is up, received echo-reply ttl 60 (0.19s latency).
+Scanned at 2021-05-21 00:16:59 IST for 771s
+Not shown: 65532 closed ports
+Reason: 65532 resets
+PORT    STATE SERVICE     REASON         VERSION
+22/tcp  open  ssh         syn-ack ttl 60 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 91:df:5c:7c:26:22:6e:90:23:a7:7d:fa:5c:e1:c2:52 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsQBsFkx22xGvnoVM2jdoshYhErSrOah7KuFFxx17bNXpP0ngmmi8eg8cF15/W09dFRZkHpolm+hwczAJg8YtCikckf57z6tuMZIJG97TEFjtevvyw2hB7YjUJXCsQOkGKUkHs8q1QqiTX0jFaM/LQdZm+77MxuaU8XXbcghfHISAyh2++AwD6LIIJvVKk/1vjMHO6GtgoyvVmlVrITZv+5naaAUgfyqoKJr2mfsJDl8MpalE4Fb9aXP2LopBgQ5YetpjFI4kyvxlaZZ86nrvvCc5FZWXM5ezfJT1R8fIaM8+3rY/6ktlVzQ/C3fNqJaT9YolYOYcQuHZ1mJ7rrE0P
+|   256 86:57:f5:2a:f7:86:9c:cf:02:c1:ac:bc:34:90:6b:01 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCdRH8y2bhSww6mxtO3NwyfVfbhPCFZ8RxKhZrmc4LoqyRvJhmISqcY/e9JmkvjeqFx+QLGsadZo3ap9QyVuDAE=
+|   256 81:e3:cc:e7:c9:3c:75:d7:fb:e0:86:a0:01:41:77:81 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBOdFR83uui/AaLq3bUcJ0REIIL0laVVmSMvkeVpGWd1
+139/tcp open  netbios-ssn syn-ack ttl 60 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn syn-ack ttl 60 Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=5/21%OT=22%CT=1%CU=35210%PV=Y%DS=5%DC=T%G=Y%TM=60A6B1A
+OS:6%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=10A%TI=Z%CI=Z%II=I%TS=A)SEQ
+OS:(SP=105%GCD=1%ISR=10A%TI=Z%CI=Z%TS=A)OPS(O1=M506ST11NW7%O2=M506ST11NW7%O
+OS:3=M506NNT11NW7%O4=M506ST11NW7%O5=M506ST11NW7%O6=M506ST11)WIN(W1=F4B3%W2=
+OS:F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(R=Y%DF=Y%T=40%W=F507%O=M506NNSN
+OS:W7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%D
+OS:F=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O
+OS:=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W
+OS:=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%R
+OS:IPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 26.934 days (since Sat Apr 24 02:05:07 2021)
+Network Distance: 5 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: POLOSMB; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 2s, deviation: 0s, median: 1s
+| nbstat: NetBIOS name: POLOSMB, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   POLOSMB<00>          Flags: <unique><active>
+|   POLOSMB<03>          Flags: <unique><active>
+|   POLOSMB<20>          Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+| Statistics:
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 28264/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 10228/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 41204/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 64197/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+|   Computer name: polosmb
+|   NetBIOS computer name: POLOSMB\x00
+|   Domain name: \x00
+|   FQDN: polosmb
+|_  System time: 2021-05-20T18:59:47+00:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-05-20T18:59:47
+|_  start_date: N/A
+
+TRACEROUTE (using port 23/tcp)
+HOP RTT       ADDRESS
+1   89.70 ms  10.17.0.1
+2   ... 4
+5   198.75 ms 10.10.186.83
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May 21 00:29:50 2021 -- 1 IP address (1 host up) scanned in 770.69 seconds

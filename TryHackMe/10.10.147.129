@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Fri May 21 16:06:12 2021 as: nmap -sV -oN 10.10.147.129 -vv
+Read data files from: /usr/bin/../share/nmap
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Fri May 21 16:06:12 2021 -- 0 IP addresses (0 hosts up) scanned in 0.23 seconds

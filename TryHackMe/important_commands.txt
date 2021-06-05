@@ -1,0 +1,5 @@
+To find any file:
+find / -name FILE_NAME 2> /dev/null
+
+To find word count:
+wc -c FILE_NAME
