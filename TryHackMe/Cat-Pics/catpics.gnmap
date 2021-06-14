@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Mon Jun 14 12:01:59 2021 as: nmap -p21,22,1875,2375,4420,7510,8080,14400,21934,36103,37359,43560,48459,52341,53389,55037,60982,63900 -sC -sV -oA catpics 10.10.107.85
+Host: 10.10.107.85 (catpics.thm)	Status: Up
+Host: 10.10.107.85 (catpics.thm)	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 1875/closed/tcp//westell-stats///, 2375/filtered/tcp//docker///, 4420/open/tcp//nvm-express?///, 7510/closed/tcp//ovhpas///, 8080/open/tcp//http//Apache httpd 2.4.46 ((Unix) OpenSSL|1.1.1d PHP|7.3.27)/, 14400/closed/tcp/////, 21934/closed/tcp/////, 36103/closed/tcp/////, 37359/closed/tcp/////, 43560/closed/tcp/////, 48459/closed/tcp/////, 52341/closed/tcp/////, 53389/closed/tcp/////, 55037/closed/tcp/////, 60982/closed/tcp/////, 63900/closed/tcp/////
+# Nmap done at Mon Jun 14 12:03:31 2021 -- 1 IP address (1 host up) scanned in 92.35 seconds
